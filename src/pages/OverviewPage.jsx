@@ -3,6 +3,7 @@ import Header from "../components/common/Header";
 import { motion } from "framer-motion";
 import StateCard from "../components/common/StateCard";
 import { BarChart2, ShoppingBag, Users, Zap } from "lucide-react";
+import SalesOverviewChart from "../components/overview/SalesOverviewChart";
 
 const OverviewPage = () => {
   return (
@@ -43,6 +44,9 @@ const OverviewPage = () => {
           />
         </motion.div>
         {/* Charts */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <SalesOverviewChart/>
+        </div>
       </main>
     </div>
   );
