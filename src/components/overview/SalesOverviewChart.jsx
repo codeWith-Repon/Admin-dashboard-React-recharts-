@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import {
   CartesianGrid,
+  Legend,
   Line,
   LineChart,
   ResponsiveContainer,
@@ -48,6 +49,7 @@ const SalesOverviewChart = () => {
               }}
               itemStyle={{ color: "#E5E7EB" }}
             />
+            <Legend/>
             <Line
               type="monotone"
               dataKey="sales"
